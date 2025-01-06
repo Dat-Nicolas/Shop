@@ -1,0 +1,39 @@
+body
+        {
+            margin: 0;
+        }
+        #containerSlider
+        {
+            margin: auto;
+            width: 90%;
+            text-align: center;
+            padding-top: 100px;
+            box-sizing: border-box;
+        }
+        #containerSlider img
+        {
+            width: 80%;
+            text-align: center;
+            align-content: center;
+            margin: 0 auto;
+            max-height: 30rem;
+            border: 1px solid red;
+        }
+
+        .slick-dots li button:before {
+            font-size: 16px;
+        }
+        @media(max-width: 732px)
+        {
+            #containerSlider img
+            {
+                height: 12em;
+            }
+        }
+        @media(max-width: 500px)
+        {
+            #containerSlider img
+            {
+                height: 10em;
+            }
+        }

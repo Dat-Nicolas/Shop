@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> SHOP </title>
+    <!-- favicon -->
+    <link rel="icon" href="https://png.pngtree.com/png-clipart/20230407/original/pngtree-cute-2d-grocery-store-icon-png-image_9030450.png" type="image/gif" sizes="16x16">
+    <!-- fontawesome -->
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/i18next@21.6.3/dist/umd/i18next.min.js"></script>
+
+    <link rel="stylesheet" href="./css/orderPlaced.css">
+</head>
+<body>  
+    <!-- HEADER -->
+    <div id="1"></div>
+    <script>
+        load("header.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+
+    <!-- OREDER PLACED -->
+    <div id="orderContainer">
+        <div id="check"><i class="fas fa-check-circle"></i></div>
+        
+        <div id="aboutCheck">
+            <h1> Đặt hàng thành công </h1>
+            <p> Chúng tôi sẽ gửi chi tiết đơn hàng cho bạn qua email. </p>
+        </div>
+    </div>
+</body>
+<script src="./js/header.js"></script>
+</html>
