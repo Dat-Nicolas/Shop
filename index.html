@@ -77,7 +77,7 @@
             document.getElementById(4).innerHTML = req.responseText;
         }
     </script>
-    <div id='bttop'> <i class="fas fa-arrow-up    "></i></div>
+    <div id='bttop'> <i class="fas fa-arrow-up"></i></div>
     <!-- slider JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script>
@@ -94,20 +94,14 @@
     </script>
 
 
-    <!-- content JS -->
-    <script src="js/content.js">
-        $(document).ready(function () {
-            $('#containerSlider').slick({
-                dots: true,
-                infinite: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 3000,
-            });
-        });
 
-    </script>
+    <!-- <header id="content" class="content"></header>
+<script>
+    load("#content", "./templates/content.html");
+</script> -->
+
+    <!-- content JS -->
+    <script src="js/content.js"></script>
 
     <script>
         $(function () {
