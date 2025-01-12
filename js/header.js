@@ -30,7 +30,9 @@ function updateContent() {
     document.querySelector('.manage a').setAttribute('title', i18next.t('manage'));
     document.querySelector('details summary:first-child').textContent = i18next.t('background');
     document.querySelector('details:nth-of-type(2) summary').textContent = i18next.t('language');
-
+    document.querySelector('#fashion').textContent = i18next.t('clothing');
+    document.querySelector('#item').textContent = i18next.t('accessories');
+    
 }
 
 // Khởi tạo i18next
@@ -45,8 +47,9 @@ i18next.init({
                 cart: 'Cart',
                 manage: 'Manage',
                 background: 'Background',
-                language: 'Language'
-
+                language: 'Language',
+                fashion :'Fashion',
+                item:'Item'
             }
         },
         vi: {
@@ -57,7 +60,9 @@ i18next.init({
                 cart: 'Giỏ hàng',
                 manage: 'Quản lý',
                 background: 'Màu nền',
-                language: 'Ngôn ngữ'
+                language: 'Ngôn ngữ',
+                fashion :'Thời trang',
+                item:'Phụ kiện'
             }
         }
     }

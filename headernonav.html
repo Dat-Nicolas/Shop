@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> SHOP </title>
+    <!-- favicon -->
+    <link rel="icon"
+        href="https://png.pngtree.com/png-clipart/20230407/original/pngtree-cute-2d-grocery-store-icon-png-image_9030450.png"
+        type="image/gif" sizes="16x16">
+    <!-- EXTERNAL LINKS -->
+    <link rel="stylesheet" href="css/header.css">
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/i18next@21.6.3/dist/umd/i18next.min.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <section>
+            <!-- MAIN CONTAINER -->
+            <div id="container" style="display: flex;">
+                <!-- SHOP NAME -->
+                <div id="shopName"><a href="index.html"> <b>SHOP</b> </a></div>
+                <!-- SEARCH SECTION -->
+                <div id="search">
+                    <i class="fas fa-search search"></i>
+                    <input type="text" id="input" name="searchBox" placeholder="Nhập để tìm kiếm">
+                </div>
+                <!-- USER SECTION (CART AND USER ICON) -->
+                <div id="user">
+                    <a href="cart.html">
+                        <i class="fa-solid fa-cart-shopping icon-cart">
+                            <div id="badge"> 0 </div>
+                        </i>
+                    </a>
+
+                    <div class="manage">
+                        <a href="#"> <i class="fa-solid fa-gear"></i></a>
+                        <ul class="dropdown">
+                            <details>
+                                <summary>Màu nền</summary>
+                                <p data-color="lightgreen">xanh lục</p>
+                                <p data-color="pink">hồng</p>
+                                <p data-color="lime">Xanh chanh</p>
+                                <p data-color="lavender">Tím oải hương</p>
+                                <p data-color="mistyrose">Hồng phấn sương mù</p>
+                                <p data-color="gold">Vàng kim</p>
+                                <p data-color="salmon">Hồng cam</p>
+                                <p data-color="floralwhite">Trắng kem hoa</p>
+                            </details>
+                            <details>
+                                <summary>Ngôn ngữ</summary>
+                                <p data-lang="vi">Tiếng Việt</p>
+                                <p data-lang="en">English</p>
+                            </details>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+</body>
+
+</html>
